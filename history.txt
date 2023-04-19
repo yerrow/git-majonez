@@ -1,0 +1,21 @@
+    8  mkdir git-majonez
+    9  cd git-majonez/
+   10  git init
+   11  touch main.cpp
+   12  git add main.cpp 
+   13  git commit -m"Initial commit"
+   14  git add main.cpp 
+   15  git commit -m"Farewell changed"
+   16  git remote add origin https://github.com/yerrow/git-majonez.git
+   17  git push -u origin master
+   18  git checkout -b cs
+   19  git reset --hard HEAD^
+   20  git add main.cpp 
+   21  git commit -m"Greetings"
+   22  git push origin cs
+   23  git checkout master 
+   24  git merge cs
+   25  git add main.cpp 
+   26  git commit
+   27  history
+   28  history | tail -n21 >> history.txt
